@@ -7,6 +7,13 @@ wpadding = w/10;
 padding = 10;
 radius = 50;
 
+var title = $('#chart-title').text();
+
+$('#chart-title').hover(function() {
+	$(this).text("Data from wtatennis.com");
+}, function() { $(this).text(title);
+});
+
 var svg = d3.select("#chart")
     .append("svg")
     .attr("width","100%")

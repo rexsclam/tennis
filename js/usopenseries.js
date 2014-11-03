@@ -5,6 +5,13 @@ var h = $chart.height();
 hpadding = h/10;
 wpadding = w/10;
 
+var title = $('#chart-title').text();
+
+$('#chart-title').hover(function() {
+	$(this).text("Data from wikipedia.com");
+}, function() { $(this).text(title);
+});
+
 d3.csv("data/usopenseries.csv", function(error, data) {
 	dataset = data;
 
