@@ -1,0 +1,15 @@
+.button-player {
+	display: table-cell;
+	width: 25%;
+	text-align: center;
+	height: 100%;
+	color: #ffffff;
+	background-color: rgba(135, 0, 0, 1);
+	vertical-align: middle;
+}
+
+.button-player.active {
+	color: rgba(135, 0, 0, 1);
+	background-color: #ffffff;
+	opacity: 1;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/usopenseries.css">
+		<link rel="stylesheet" type="text/css" href="css/tennis.css">
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="prev" href="index.html">
+		<link rel="next" href="">
+		<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	</head>
+	<body>
+		<div id="title" class="row">
+			<div id="prev">
+
+			</div>
+			<div class="ball">
+				<svg class="ball-svg" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+					<circle cx="50" cy="50" r="25" />
+				</svg>
+			</div>
+			<div id="tennis"><a href="index.html">TENNIS</a></div>
+			<div class="ball">
+				<svg class="ball-svg" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+					<circle cx="50" cy="50" r="25" />
+				</svg>
+			</div>
+			<div id="next">
+				<a href="wtah2h.html">WTA H2H</a>
+			</div>
+		</div>
+		<div id="main" class="row">
+			<div id="options" class="row">
+				<div id="options-1">
+					<div id="options-1-table">
+						<div class="button_gender button active" id="all-genders">All
+						</div><div class="button_gender button" id="atp">ATP</div><div class="button_gender button" id="wta">WTA
+						</div>
+					</div>
+				</div>
+				<div id="chart-title">
+					US Open Series and US Open Performance
+				</div>
+				<div id="options-2">
+					<div id="options-2-table">
+						<div class="button_place button active" id="all-places">All
+						</div><div class="button_place button" id="one">1st</div><div class="button_place button" id="two">2nd
+						</div><div class="button_place button" id="three">3rd
+						</div>
+					</div>
+				</div>
+			</div>
+			<div id="chart-row" class="row">
+				<div id="chart" class="col-xs-12 col-md-12 col-lg-12"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+		<script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script type="text/javascript" src="js/tennis.js"></script>
+		<script type="text/javascript" src="js/usopenseries.js"></script>
+	</body>
+</html>
+	

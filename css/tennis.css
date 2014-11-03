@@ -1,0 +1,145 @@
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+a, a:visited, a:focus, a:hover {
+	color: #0A5C2F !important;
+	text-decoration: none !important;
+}
+
+svg a, svg a:visited, svg a:focus, svg a:hover {
+	color: #0A5C2F;
+	text-decoration: none;
+}
+
+.row {
+	margin-left: 0 !important;
+	margin-right: 0 !important;
+}
+
+.button:hover {
+	opacity: 0.5;
+	cursor: pointer;
+}
+
+/* top bar */
+#title, #bottom {
+	height: 10%;
+	text-align: center;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	width: 100%;
+}
+
+#title a:hover {
+	opacity: 0.5;
+}
+
+.ball {
+	width: 5%;
+	height: 100%;
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	margin: 0 auto;
+}
+
+.ball-svg {
+	float: right;
+	max-height: 50px;
+}
+
+.ball-svg circle {
+	fill: #ccff00;
+}
+
+#tennis {
+	display: table-cell;
+	vertical-align: middle;
+	width: 30%;
+	font-size: 3rem;
+	color: #0A5C2F;
+}
+
+#prev, #next {
+	display: table-cell;
+	vertical-align: middle;
+	width: 30%;
+	font-size: 1.5rem;
+	color: #0A5C2F;
+}
+
+/* main */
+#main {
+	height: 90%;
+	max-height: 90%;
+	max-width: 100%;
+	overflow: hidden;
+}
+
+#main text {
+	stroke: black;
+	fill: black;
+	font-size: 1rem;
+	text-anchor: middle;
+}
+
+#main text:hover {
+	cursor: pointer;
+}
+
+#main circle:hover {
+	cursor: pointer;
+}
+
+
+
+/* options */
+#options {
+	height: 10%;
+	text-align: center;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	width: 100%;
+}
+
+#options-1-table, #options-2-table {
+	display: table;
+	height: 100%;
+	width: 100%;
+}
+
+#options-1, #options-2 {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 35%;
+}
+
+/* chart */
+#chart-row {
+	height: 90%;
+}
+
+#chart {
+	height: 100%;
+	text-align: center;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+#chart-title {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 30%;
+	font-size: 1.5rem;
+	background-color: #0A5C2F;
+	color: #ffffff;
+}
+
