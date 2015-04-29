@@ -11,6 +11,11 @@
     font-size: 11px;
 }
 
+#options-1-table, #options-2-table {
+	display: table;
+	table-layout: fixed;
+}
+
 .button_gender {
 	display: table-cell;
 	width: calc(100%/3);
@@ -18,6 +23,8 @@
 	height: 100%;
 	color: #ffffff;
 	vertical-align: middle;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 
 #all-genders {
@@ -41,6 +48,8 @@
 	height: 100%;
 	color: #ffffff;
 	vertical-align: middle;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 
 #all-places {

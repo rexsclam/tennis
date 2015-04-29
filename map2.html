@@ -1,0 +1,192 @@
+
+<meta charset="utf-8">
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/tennis.css" />
+		<link rel="stylesheet" type="text/css" href="css/map2.css" />
+		<link rel="stylesheet" type="text/css" href="css/d3-tip.css" />
+		<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css" />
+		<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+		<link rel="prev" href="wtah2h.html">
+		<link rel="next" href="">
+		<link rel='shortcut icon' type='image/x-icon' href='favicon.ico' />
+	</head>
+	<body>
+		<div id="title" class="row">
+			<div id="prev">
+				<a href="atph2h.html">ATP H2H</a>
+			</div>
+			<div class="ball">
+				<svg class="ball-svg" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+					<circle cx="50" cy="50" r="25" />
+				</svg>
+			</div>
+			<div id="tennis"><a href="index.html">TENNIS</a></div>
+			<div class="ball">
+				<svg class="ball-svg" viewbox="0 0 100 100" preserveAspectRatio="xMidYMid meet">
+					<circle cx="50" cy="50" r="25" />
+				</svg>
+			</div>
+			<div id="next">
+
+			</div>
+		</div>
+		<div id="main" class="row">
+			<div id="options" class="row">
+				<div id="options-1" >
+					<div id="options-1-table">
+						<div class="button-metrics button button-1" id="continent">Continent
+						</div><div class="button-metrics button button-2" id="tour">Tour
+						</div><div class="button-metrics button button-3" id="surface">Surface
+						</div><div class="button-metrics button button-4" id="measure">#/$
+						</div>
+					</div>
+				</div>
+				<div id="chart-title" >
+					Tournament Map
+				</div>
+				<div id="options-2">
+					<div id="options-2-table">
+						<div class="button-metrics button button-5" id="start-year">Start Year
+						</div><div class="button-metrics button button-6" id="end-year">End Year
+						</div>
+					</div>
+				</div>
+				
+			</div>
+			<div class="options-dropdown options-dropdown-1" id="options-continent">
+				<div class="options-dropdown-row options-dropdown-1-row options-continent-row">
+					<div class="button-dropdown-metrics button button-dropdown-1 button-dropdown-continent" id="asia">
+						Asia
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-1-row options-continent-row">
+					<div class="button-dropdown-metrics button button-dropdown-1 button-dropdown-continent" id="africa">
+						Africa
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-1-row options-continent-row">
+					<div class="button-dropdown-metrics button button-dropdown-1 button-dropdown-continent active" id="europe">
+						Europe
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-1-row options-continent-row">
+					<div class="button-dropdown-metrics button button-dropdown-1 button-dropdown-continent" id="north-america">
+						North America
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-1-row options-continent-row">
+					<div class="button-dropdown-metrics button button-dropdown-1 button-dropdown-continent" id="oceania">
+						Oceania
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-1-row options-continent-row">
+					<div class="button-dropdown-metrics button button-dropdown-1 button-dropdown-continent" id="south-america">
+						South America
+					</div>
+				</div>
+			</div>
+			<div class="options-dropdown options-dropdown-2" id="options-tour">
+				<div class="options-dropdown-row options-dropdown-2-row options-tour-row">
+					<div class="button-dropdown-metrics button button-dropdown-2 button-dropdown-tour active" id="all-tour">
+						Both Tours
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-2-row options-tour-row">
+					<div class="button-dropdown-metrics button button-dropdown-2 button-dropdown-tour" id="atp">
+						ATP
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-2-row options-tour-row">
+					<div class="button-dropdown-metrics button button-dropdown-2 button-dropdown-tour" id="wta">
+						WTA
+					</div>
+				</div>
+			</div>
+			<div class="options-dropdown options-dropdown-3" id="options-surface">
+				<div class="options-dropdown-row options-dropdown-3-row options-surface-row">
+					<div class="button-dropdown-metrics button button-dropdown-3 button-dropdown-surface active" id="all-surface">
+						All Surfaces
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-3-row options-surface-row">
+					<div class="button-dropdown-metrics button button-dropdown-3 button-dropdown-surface" id="hard">
+						Hard
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-3-row options-surface-row">
+					<div class="button-dropdown-metrics button button-dropdown-3 button-dropdown-surface" id="clay">
+						Clay
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-3-row options-surface-row">
+					<div class="button-dropdown-metrics button button-dropdown-3 button-dropdown-surface" id="grass">
+						Grass
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-3-row options-surface-row">
+					<div class="button-dropdown-metrics button button-dropdown-3 button-dropdown-surface" id="carpet">
+						Carpet
+					</div>
+				</div>
+			</div>
+			<div class="options-dropdown options-dropdown-4" id="options-measure">
+				<div class="options-dropdown-row options-dropdown-4-row options-measure-row">
+					<div class="button-dropdown-metrics button button-dropdown-4 button-dropdown-measure active" id="number">
+						# of Tourn
+					</div>
+				</div>
+				<div class="options-dropdown-row options-dropdown-4-row options-measure-row">
+					<div class="button-dropdown-metrics button button-dropdown-4 button-dropdown-measure" id="prize">
+						Prize Money
+					</div>
+				</div>
+			</div>
+			<div class="options-dropdown options-dropdown-5" id="options-start-year">
+			</div>
+			<div class="options-dropdown options-dropdown-6" id="options-end-year">
+			</div>
+			
+			<div id="chart-row" class="row">
+				<div id="info" class="col-xs-3 col-md-3 col-lg-3">
+					<div id="info-row-title" class="row">
+						<div class="info-cell info-cell-title" id="info-title">
+						6 countries
+						</div>
+					</div>
+					<div id="info-row-1" class="row info-row">
+						<div class="info-cell info-cell-1" id="info-1">
+						6 countries
+						</div>
+					</div>
+					<div id="info-row-2" class="row info-row">
+						<div class="info-cell info-cell-2" id="info-2">
+						6 countries
+						</div>
+					</div>
+					<div id="info-row-3" class="row info-row">
+						<div class="info-cell info-cell-3" id="info-3">
+						6 countries
+						</div>
+					</div>
+					<div id="info-row-4" class="row info-row">
+						<div class="info-cell info-cell-4" id="info-4">
+						6 countries
+						</div>
+					</div>
+				</div>
+				<div id="chart" class="col-xs-9 col-md-9 col-lg-9"></div>
+			</div>
+		</div>
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+		<script type="text/javascript" src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+		<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.4.11/d3.js"></script>
+		<script type="text/javascript" src="http://labratrevenge.com/d3-tip/javascripts/d3.tip.v0.6.3.js"></script>
+		<script type="text/javascript" src="http://d3js.org/queue.v1.min.js"></script>
+		<script type="text/javascript" src="http://d3js.org/topojson.v1.min.js"></script>
+		<script type="text/javascript" src="js/tennis.js"></script>
+		<script type="text/javascript" src="js/map2.js"></script>
+	</body>
+</html>
+	

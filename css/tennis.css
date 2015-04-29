@@ -18,7 +18,12 @@ svg a, svg a:visited, svg a:focus, svg a:hover {
 	margin-right: 0 !important;
 }
 
-.button:hover {
+.button {
+	font-size: 1.4rem;
+	line-height: 2rem;
+}
+
+.button:hover, .button.active:hover {
 	opacity: 0.5;
 	cursor: pointer;
 }
@@ -80,15 +85,9 @@ svg a, svg a:visited, svg a:focus, svg a:hover {
 }
 
 #main text {
-	stroke: black;
-	fill: black;
 	font-size: 1rem;
 	text-anchor: middle;
-}
-
-#main text:hover {
-	cursor: pointer;
-}
+}wwq
 
 #main circle:hover {
 	cursor: pointer;
@@ -138,7 +137,7 @@ svg a, svg a:visited, svg a:focus, svg a:hover {
 	vertical-align: middle;
 	height: 100%;
 	width: 30%;
-	font-size: 1.5rem;
+	font-size: 1.4rem;
 	background-color: #0A5C2F;
 	color: #ffffff;
 }

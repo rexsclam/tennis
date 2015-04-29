@@ -1,0 +1,286 @@
+.button:hover, .button.active:hover {
+	opacity: 1;
+	cursor: pointer;
+}
+
+#chart {
+	width: 82.5%;
+}
+
+#main .chart-label {
+	font-size: 1.5rem;
+	display: none;
+}
+
+#main .chart-label-middle {
+	font-size: 1.5rem;
+	display: block;
+}
+
+#options {
+	position: relative;
+}
+
+#options-1-table, #options-2-table {
+	display: table;
+	table-layout: fixed;
+}
+
+.button-metrics {
+	display: table-cell;
+	/*width: calc(100%/3);*/
+	text-align: center;
+	color: #ffffff;
+	height: 100%;
+	/*background-color: rgba(135, 0, 0, 1);*/
+	vertical-align: middle;
+	line-height: 2rem;
+	font-size: 1.4rem;
+}
+
+.button-metrics.active {
+	background-color: #ffffff;
+	opacity: 1;
+}
+
+.chart-title-filler {
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+	height: 100%;
+	width: 30%;
+	font-size: 1.4rem;
+}
+
+.options-dropdown-row {
+	display: table-row;
+	table-layout: fixed;
+	height: 10%;
+	width: 100%;
+}
+
+.button-dropdown-metrics {
+	display: table-cell;
+	width: calc(100%);
+	text-align: center;
+	color: #ffffff;
+	height: 100%;
+	background-color: rgba(135, 0, 0, 1);
+	vertical-align: middle;
+	line-height: 5.5rem;
+	font-size: 1.4rem;
+}
+
+.button-dropdown-metrics.active {
+	background-color: #ffffff !important;
+}
+
+.button-dropdown-5, .button-dropdown-6 {
+	line-height: 4rem;
+}
+
+.options-dropdown {
+	display: table;
+	position: absolute;
+	table-layout: fixed;
+	margin: 0;
+	height: 10%;
+	z-index: 2;
+	display: none;
+}
+
+.options-dropdown-1 {
+	width: 8.75%;
+	left: 1px;
+}
+
+.options-dropdown-2 {
+	left: 8.75%;
+	width: 8.75%;
+}
+
+.options-dropdown-3 {
+	left: calc(2*8.75%);
+	width: 8.75%;
+}
+
+.options-dropdown-4 {
+	left: calc(3*8.75%);
+	width: 8.75%;
+}
+
+.options-dropdown-5 {
+	left: calc(4*8.75% + 30%);
+	width: 17.5%;
+}
+
+.options-dropdown-6 {
+	left: calc(6*8.75% + 30%);
+	width: 17.5%;
+}
+
+.button-1, .button-dropdown-1 {
+	background-color: #A6654E;
+	border-color: #A6654E;
+}
+
+.button-1:hover, .button-dropdown-1:not(.active):hover {
+	background-color: #c09383;
+	border-color: #c09383;
+}
+
+.button-2, .button-dropdown-2 {
+	background-color: #D98D62;
+	border-color: #D98D62;
+}
+
+.button-2:hover, .button-dropdown-2:not(.active):hover {
+	background-color: #e4af91;
+	border-color: #e4af91;
+}
+
+.button-3, .button-dropdown-3 {
+	background-color: #F2B47E;
+	border-color: #F2B47E;
+}
+
+.button-3:hover, .button-dropdown-3:not(.active):hover {
+	background-color: #f5caa4;
+	border-color: #f5caa4;
+}
+
+.button-4, .button-dropdown-4 {
+	background-color: #F2D399;
+	border-color: #F2D399;
+}
+
+.button-4:hover, .button-dropdown-4:not(.active):hover {
+	background-color: #f5e0b7;
+	border-color: #f5e0b7;
+}
+
+#chart-title {
+	background-color: #A6654E;
+	border-color: #A6654E;
+}
+
+#chart-title:hover {
+	background-color: #c09383;
+	border-color: #c09383;
+}
+
+.button-5, .button-dropdown-5 {
+	background-color: #F2D399;
+	border-color: #F2D399;
+}
+
+.button-dropdown-5:not(.disabled):hover {
+	background-color: #f5e0b7;
+	border-color: #f5e0b7;
+}
+
+.button-6, .button-dropdown-6 {
+	background-color: #F2B47E;
+	border-color: #F2B47E;
+}
+
+.button-dropdown-6:not(.disabled):hover {
+	background-color: #f5caa4;
+	border-color: #f5caa4;
+}
+
+.button-dropdown-1.active {
+	color: #A6654E !important;
+}
+
+.button-dropdown-2.active {
+	color: #D98D62 !important;
+}
+
+.button-dropdown-3.active {
+	color: #F2B47E !important;
+}
+
+.button-dropdown-4.active {
+	color: #F2D399 !important;
+}
+
+.button-dropdown-5.active {
+	color: #F2D399 !important;
+}
+
+.button-dropdown-6.active {
+	color: #F2B47E !important;
+}
+
+.button-dropdown-5.disabled {
+	cursor: default;
+	background-color: #DFE1E5;
+}
+
+.button-dropdown-6.disabled {
+	cursor: default;
+	background-color: #DFE1E5;
+}
+
+.country {
+	stroke: #444444;
+}
+
+#info {
+	height: 100%;
+	display: table;
+	table-layout: fixed;
+	margin: 0;
+	padding: 0;
+	width: 17.5%;
+}
+
+#info-row-title {
+	height: 10%;
+	display: table-row;
+	table-layout: fixed;
+	width: 100%;
+	line-height: 5.5rem;
+	font-size: 2rem;
+}
+
+.info-row {
+	height: 22.5%;
+	display: table-row;
+	table-layout: fixed;
+	width: 100%;
+	line-height: 5.5rem;
+	font-size: 1.4rem;
+}
+
+.info-cell {
+	display: table-cell;
+	vertical-align: middle;
+	text-align: center;
+	color: #ffffff;
+	width: 100%;
+}
+
+.info-cell-title {
+	color: #A6654E;
+}
+
+.info-cell-1 {
+	color: #A6654E;
+}
+
+.info-cell-2 {
+	color: #D98D62;
+}
+
+.info-cell-3 {
+	color: #F2B47E;
+}
+
+.info-cell-4 {
+	color: #F2D399;
+}
+
+/* off white DFE1E5 */
+

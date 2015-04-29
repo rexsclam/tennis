@@ -1,3 +1,4 @@
+
 var dataset = { nodes: [], edges:[], alledges: []};
 var $chart = $('#chart');
 var w = $chart.width();
@@ -142,12 +143,16 @@ function updatechart(player, rank) {
     	.attr("class", function(d) {return "node "+d.id})
     	//radius based on record
     	.attr("r", function(d) { return 10*(d[player]+2)})
-        .style("fill", function(d, i) {
-                return colors(i);
+        .style("fill", function(d) {
+        	if (d.name == player) {
+        		return "#3A8F62";
+        	} else {
+        		return "#c38080";
+        	}
         })
         //active player has border
-        .attr("stroke", function(d, i) {
-        	if (d.name == player) {return colors(i)};
+        .attr("stroke", function(d) {
+        	if (d.name == player) {return "#0a5c2f"};
         })
         .attr("stroke-width", 3)
         .attr("fill-opacity", 0.5)
@@ -259,11 +264,16 @@ function drawchart(player, rank) {
     var nodes = gnodes.append("circle")
     	.attr("class", function(d) {return "node "+d.id})
     	.attr("r", function(d) { return 10*(d[player]+2)})
-        .style("fill", function(d, i) {
-                return colors(i);
+        .style("fill", function(d) {
+        	if (d.name == player) {
+        		return "#3A8F62";
+        	} else {
+        		return "#c38080";
+        	}
         })
-        .attr("stroke", function(d, i) {
-        	if (d.name == player) {return colors(i)};
+        //active player has border
+        .attr("stroke", function(d) {
+        	if (d.name == player) {return "#0a5c2f"};
         })
         .attr("stroke-width", 3)
         .attr("fill-opacity", 0.5)

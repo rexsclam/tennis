@@ -6,10 +6,22 @@
 	color: #ffffff;
 	background-color: rgba(135, 0, 0, 1);
 	vertical-align: middle;
+	font-size: 1.4rem;
+	line-height: 2rem;
 }
 
 .button-player.active {
 	color: rgba(135, 0, 0, 1);
 	background-color: #ffffff;
 	opacity: 1;
+}
+
+#main text {
+	fill: black;
+	stroke: black;
+}
+
+#options-1-table, #options-2-table {
+	display: table;
+	table-layout: fixed;
 }
